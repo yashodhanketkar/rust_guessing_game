@@ -31,3 +31,20 @@ pub fn get_random_number(upper_range: i32) -> i32 {
 
     return rng;
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_get_random_number_provided() {
+        let random_number = get_random_number(10);
+        assert!(random_number >= 1 && random_number <= 10);
+    }
+
+    #[test]
+    fn test_get_random_number_not_provided() {
+        let random_number = get_random_number(-1);
+        assert!(random_number >= 1 && random_number <= 100);
+    }
+}
