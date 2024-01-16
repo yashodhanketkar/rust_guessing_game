@@ -71,3 +71,15 @@ pub fn validate_guess(guess: i32, secret_number: i32, tries: i32) -> bool {
     }
     return false;
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_validate_guess() {
+        assert!(validate_guess(10, 10, 1));
+        assert!(!validate_guess(6, 10, 1));
+        assert!(!validate_guess(12, 10, 1));
+    }
+}
