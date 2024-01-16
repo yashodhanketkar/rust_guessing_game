@@ -29,4 +29,6 @@ To learn Rust by creating a simple number guessing game
   cargo doc --open
 ```
 ## License
-Unlicensed
+MIT License
+
+Copyright (c) 2024 Yashodhan Ketkar
