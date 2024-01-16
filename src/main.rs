@@ -5,7 +5,7 @@ mod util;
 ///
 /// This entry point for our program.
 ///
-/// Prints out "Guess the number!" and runs the game.
+/// Prints out "Guess the number!" and runs the game using [game::run()]
 fn main() {
     println!("Guess the number!");
     game::run();

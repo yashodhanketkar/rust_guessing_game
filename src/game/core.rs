@@ -22,6 +22,13 @@ use crate::util;
 ///
 ///     - This variable resets every time the user guesses.
 ///
+///
+/// # Functions
+///
+///   - [util::get_random_number] to generate a random number.
+///   - [util::get_number_from_user] to get a number from the user.
+///   - [game::validate_guess] to check game status.
+///
 pub fn run() {
     let mut tries = 3;
 
